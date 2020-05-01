@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1062
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Music", "Music\Music.csproj", "{C9F27C1E-252E-4E11-A4F2-73FD16C9EB17}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D10D690F-8E17-4359-8024-941DB55F70D2} = {D10D690F-8E17-4359-8024-941DB55F70D2}
+		{A3FF86A6-8782-49EC-BEEC-3E786F53A60D} = {A3FF86A6-8782-49EC-BEEC-3E786F53A60D}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicTool", "MusicTool\MusicTool.csproj", "{D10D690F-8E17-4359-8024-941DB55F70D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicControlLibrary", "MusicControlLibrary\MusicControlLibrary.csproj", "{A3FF86A6-8782-49EC-BEEC-3E786F53A60D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C9F27C1E-252E-4E11-A4F2-73FD16C9EB17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9F27C1E-252E-4E11-A4F2-73FD16C9EB17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9F27C1E-252E-4E11-A4F2-73FD16C9EB17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9F27C1E-252E-4E11-A4F2-73FD16C9EB17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D10D690F-8E17-4359-8024-941DB55F70D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D10D690F-8E17-4359-8024-941DB55F70D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D10D690F-8E17-4359-8024-941DB55F70D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D10D690F-8E17-4359-8024-941DB55F70D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3FF86A6-8782-49EC-BEEC-3E786F53A60D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3FF86A6-8782-49EC-BEEC-3E786F53A60D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3FF86A6-8782-49EC-BEEC-3E786F53A60D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3FF86A6-8782-49EC-BEEC-3E786F53A60D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {43635F71-7FCA-46B3-AA24-80335D0F69D3}
+	EndGlobalSection
+EndGlobal
