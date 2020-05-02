@@ -23,3 +23,5 @@ Debug版不会自动更新，用于调试当前版本。Release版及发布版�
 ## 友情链接
 
 [Newtonsoft.Json官网](https://www.newtonsoft.com/json)
+
+[.NET Framework官网](https://dotnet.microsoft.com/download/dotnet-framework)
