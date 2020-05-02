@@ -18,7 +18,7 @@ Debug版不会自动更新，用于调试当前版本。Release版及发布版�
 
 ## 关于下载
 
-不知道在哪里下载的[点我下载](releases)
+不知道在哪里下载的[点我下载](https://github.com/abcdefghHIM/Music/releases)
 
 ## 友情链接
 
