@@ -24,7 +24,7 @@ namespace Music
             }
             catch (Exception ex)
             {
-                throw new Exception("GetMD5HashFromFile() fail, error:" + ex.Message);
+                throw ex;
             }
         }
     }
