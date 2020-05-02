@@ -15,3 +15,7 @@
 ## 友情链接
 
 [Newtonsoft.Json官网](https://www.newtonsoft.com/json)
+
+## 关于Release和Debug的区别
+
+Debug版不会自动更新，用于调试当前版本。Release版及发布版本，会自动拉取更新。
