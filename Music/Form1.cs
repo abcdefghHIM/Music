@@ -24,17 +24,17 @@ namespace Music
             }
             catch
             { }
-            if (!msg.Music.version.Equals(Program.version))
+            if (!msg.Music.version.Equals(Program.version) && Program.version != -1)
             {
                 new Message("Music", "正在更新 Music...", "下载更新中...", "Cancel", true, msg.Music.url, msg.Music.name).ShowDialog();
                 hasData = true;
             }
-            if (!msg.MusicControlLibrary.version.Equals(MusicControlLibrary.Program.version))
+            if (!msg.MusicControlLibrary.version.Equals(MusicControlLibrary.Program.version) && MusicControlLibrary.Program.version != -1)
             {
                 new Message("Music", "正在更新 MusicControlLibrary...", "下载更新中...", "Cancel", true, msg.MusicControlLibrary.url, msg.MusicControlLibrary.name).ShowDialog();
                 hasData = true;
             }
-            if (!msg.MusicTool.version.Equals(MusicTool.Program.version))
+            if (!msg.MusicTool.version.Equals(MusicTool.Program.version) && MusicTool.Program.version != -1)
             {
                 new Message("Music", "正在更新 MusicTool...", "下载更新中...", "Cancel", true, msg.MusicTool.url, msg.MusicTool.name).ShowDialog();
                 hasData = true;
