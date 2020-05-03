@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicTool", "MusicTool\Musi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicControlLibrary", "MusicControlLibrary\MusicControlLibrary.csproj", "{A3FF86A6-8782-49EC-BEEC-3E786F53A60D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicUpdateProgram", "MusicUpdateProgram\MusicUpdateProgram.csproj", "{802EEA9A-CEB1-4D65-B3A5-73B84E0AD4A7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +61,18 @@ Global
 		{A3FF86A6-8782-49EC-BEEC-3E786F53A60D}.Release|x64.Build.0 = Release|x64
 		{A3FF86A6-8782-49EC-BEEC-3E786F53A60D}.Release|x86.ActiveCfg = Release|x86
 		{A3FF86A6-8782-49EC-BEEC-3E786F53A60D}.Release|x86.Build.0 = Release|x86
+		{802EEA9A-CEB1-4D65-B3A5-73B84E0AD4A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{802EEA9A-CEB1-4D65-B3A5-73B84E0AD4A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{802EEA9A-CEB1-4D65-B3A5-73B84E0AD4A7}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{802EEA9A-CEB1-4D65-B3A5-73B84E0AD4A7}.Debug|x64.Build.0 = Debug|Any CPU
+		{802EEA9A-CEB1-4D65-B3A5-73B84E0AD4A7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{802EEA9A-CEB1-4D65-B3A5-73B84E0AD4A7}.Debug|x86.Build.0 = Debug|Any CPU
+		{802EEA9A-CEB1-4D65-B3A5-73B84E0AD4A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{802EEA9A-CEB1-4D65-B3A5-73B84E0AD4A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{802EEA9A-CEB1-4D65-B3A5-73B84E0AD4A7}.Release|x64.ActiveCfg = Release|Any CPU
+		{802EEA9A-CEB1-4D65-B3A5-73B84E0AD4A7}.Release|x64.Build.0 = Release|Any CPU
+		{802EEA9A-CEB1-4D65-B3A5-73B84E0AD4A7}.Release|x86.ActiveCfg = Release|Any CPU
+		{802EEA9A-CEB1-4D65-B3A5-73B84E0AD4A7}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
