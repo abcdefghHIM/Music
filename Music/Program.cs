@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Reflection;
@@ -21,7 +23,7 @@ namespace Music
         /// 应用程序的主入口点。
         /// </summary>
         [STAThread]
-        static void Main()
+        static void Main(string[] args)
         {
             bool isRunning;
             new Mutex(false, Assembly.GetExecutingAssembly().FullName, out isRunning);
@@ -30,11 +32,19 @@ namespace Music
             Application.SetCompatibleTextRenderingDefault(false);
             try
             {
+                if (args[0].ToLower().Equals("update"))
+                {
+                    Application.Run(new Form1(true));
+                    return;
+                }
                 Application.Run(new Form1());
             }
             catch (ArgumentNullException)
             {
-
+                Process process = new Process();
+                process.StartInfo.FileName = Application.StartupPath + "/musicTool/MusicUpdateProgram.exe";
+                process.StartInfo.Arguments = "update";
+                process.Start();
             }
             catch (WebException e)
             {

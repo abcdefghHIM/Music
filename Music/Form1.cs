@@ -15,6 +15,7 @@ namespace Music
         public Form1()
         {
             InitializeComponent();
+            Directory.CreateDirectory("musicTool");
             Thread thread = new Thread(new ThreadStart(Th));
             thread.Start();
             UpData msg = JsonConvert.DeserializeObject<UpData>(WebTool.GetWebRequest("https://abcdefghHIM.github.io/Web/app/music/data.json"));
@@ -43,6 +44,11 @@ namespace Music
             {
                 throw new ArgumentNullException();
             }
+        }
+
+        public Form1(bool update)
+        {
+            InitializeComponent();
         }
 
         private void Th()
