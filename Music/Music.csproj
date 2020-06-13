@@ -42,7 +42,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
+    <Optimize>false</Optimize>
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
@@ -208,6 +208,11 @@
     <ProjectReference Include="..\MusicControlLibrary\MusicControlLibrary.csproj">
       <Project>{a3ff86a6-8782-49ec-beec-3e786f53a60d}</Project>
       <Name>MusicControlLibrary</Name>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\MusicDataLibrary\MusicDataLibrary.csproj">
+      <Project>{76b11137-36b2-4d95-9242-b6814837ec2b}</Project>
+      <Name>MusicDataLibrary</Name>
       <Private>True</Private>
     </ProjectReference>
     <ProjectReference Include="..\MusicTool\MusicTool.csproj">

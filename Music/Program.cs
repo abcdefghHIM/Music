@@ -32,11 +32,12 @@ namespace Music
             Application.SetCompatibleTextRenderingDefault(false);
             try
             {
-                if (args[0].ToLower().Equals("update"))
-                {
-                    Application.Run(new Form1(true));
-                    return;
-                }
+                if (args.Length > 0)
+                    if (args[0].ToLower().Equals("update"))
+                    {
+                        Application.Run(new Form1(true));
+                        return;
+                    }
                 Application.Run(new Form1());
             }
             catch (ArgumentNullException)

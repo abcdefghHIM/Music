@@ -4,6 +4,7 @@ using Newtonsoft.Json;
 using System;
 using System.Diagnostics;
 using System.IO;
+using System.Runtime.InteropServices;
 using System.Threading;
 using System.Windows.Forms;
 
@@ -11,11 +12,20 @@ namespace Music
 {
     public partial class Form1 : Form
     {
+        [DllImport("user32.dll")]
+        public static extern bool ReleaseCapture();
+
+        [DllImport("user32.dll")]
+        public static extern bool SendMessage(IntPtr hwnd, int wMsg, int wParam, int lParam);
+
+        private const int VM_NCLBUTTONDOWN = 0XA1;
+        private const int HTCAPTION = 2;
         public bool hasData = false;
         public Form1()
         {
             InitializeComponent();
             Directory.CreateDirectory("musicTool");
+            /*
             Thread thread = new Thread(new ThreadStart(Th));
             thread.Start();
             UpData msg = JsonConvert.DeserializeObject<UpData>(WebTool.GetWebRequest("https://abcdefghHIM.github.io/Web/app/music/data.json"));
@@ -44,6 +54,7 @@ namespace Music
             {
                 throw new ArgumentNullException();
             }
+            */
         }
 
         public Form1(bool update)
@@ -56,20 +67,10 @@ namespace Music
             new Message("Music", "正在连接 Music...", "检测更新中...", "Cancel", true).ShowDialog();
         }
 
-        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
         {
-            if (hasData)
-            {
-                string name = Process.GetCurrentProcess().MainModule.FileName;
-                File.Delete("musicTool/MusicControlLibrary.dll");
-                File.Delete("musicTool/MusicTool.dll");
-                File.Copy("musicTool/MusicControlLibrary.dll.data", "musicTool/MusicControlLibrary.dll");
-                File.Copy("musicTool/MusicTool.dll.data", "musicTool/MusicTool.dll");
-                File.Delete("musicTool/MusicControlLibrary.dll.data");
-                File.Delete("musicTool/MusicTool.dll.data");
-                File.Delete(name);
-                File.Copy("musicTool/Music.exe.data", name);
-            }
+            ReleaseCapture();
+            SendMessage((IntPtr)this.Handle, VM_NCLBUTTONDOWN, HTCAPTION, 0);
         }
     }
 }

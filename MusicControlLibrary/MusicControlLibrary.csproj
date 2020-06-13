@@ -85,6 +85,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
+    <Compile Include="TopButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="WaitProgressBar.cs">
       <SubType>Component</SubType>
     </Compile>
